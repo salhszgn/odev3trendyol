@@ -1,0 +1,150 @@
+
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease; /*geçişlerdeki yumuşaklığı sağlar örneğin bir fotonun üzerine geldiğinde yakınlaştırmasını yada bir butonun renk değiştirme süresi yumuşaklığını ayarlar*/ 
+}
+
+
+html{
+    font-size: 62.5%; /* yazı boyutlarının ve resimlerin herşeyin ram boytunu küçültür*/
+    overflow-x: hidden; /*alttaki sürükleme butonunu kaldırır*/
+scroll-padding-top: 9rem;
+scroll-behavior: smooth;
+}
+
+body{
+    background-color: #e84242;
+}
+
+html::-webkit-scrollbar{
+    width: 0.9rem;
+    background-color: white;
+}
+
+html::-webkit-scrollbar-track{ /*scrollun arkaplan rengi*/
+    background-color: transparent; /* transparent herhangi bir renk istemiyorum demek */
+}
+
+
+
+html::-webkit-scrollbar-thumb{ /*scrollun rengi*/
+    border-radius: 3rem;
+    background-color: black;
+}
+
+section{
+    padding: 3.5rem 7%;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.btn{
+    margin: 2rem 2rem 2rem 5rem;
+    display: inline-block;
+    padding: 2rem 3.5rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: black;
+    cursor: pointer;
+}
+
+
+.btn:hover{ /*butonu saydamlaştırmak için*/
+    opacity: 0.9;
+}
+
+.heading{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem  solid #fff; /*solid altındaki çizgi*/
+ }
+
+ .heading span{
+    color:black;
+    text-transform: uppercase;
+
+}
+
+
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+}
+
+
+.menu .box-container .box{
+    padding: 3%;
+    background-color: #fff;
+    border-radius: 3rem;
+    background-color: #fff;
+    min-height: 55rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.menu .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3rem;
+}
+
+.menu .box-container .box menu-category{
+    font-size: 1.2rem;
+   
+ }
+
+ .menu .box-container .box h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .fiyat{
+    font-size: 2rem;
+    padding: 0.5rem 0;
+}
+
+.menu .box-container .box .fiyat span{
+    text-decoration: line-through; /* yazının üstünü çizer*/
+    font-size: 1.5rem;
+    font-weight: 300;
+   }
+
+   
+   .menu .box-container .box .stars i{ /*yıldızların ayarları*/
+    font-size: 1.2 rem;
+    color: gold;
+    }
+
+    
+    
+
+
+
+    .menu .box-container .box .indirim{
+        position: absolute;
+        width: 8rem;
+        height: 8rem;
+        object-fit: cover;
+        border-radius: 3rem;
+       
+    }
+
